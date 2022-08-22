@@ -1,0 +1,68 @@
+.color {
+	background-color: #edf7fa;
+}
+
+.experience {
+	padding-top: 30px;
+	padding-bottom: 30px;
+
+	&__MainTitle {
+		font-style: normal;
+		font-weight: 700;
+		font-size: 26px;
+		line-height: 38px;
+		text-decoration: underline;
+		margin-bottom: 20px;
+	}
+
+	&__works {
+		display: flex;
+		gap: 30px;
+		margin-bottom: 20px;
+	}
+
+	&__title {
+		font-style: normal;
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 30px;
+		text-decoration: underline;
+		margin-bottom: 10px;
+	}
+
+	&__subtitle {
+		font-style: normal;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 26px;
+	}
+
+	&__link {
+		color: $accentColor;
+		transition: all 0.5s;
+		&:hover {
+			color: $accentColorHover;
+			transition: all 0.5s;
+		}
+	}
+
+	&__text {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 24px;
+	}
+	&__about {
+		font-style: normal;
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 24px;
+	}
+}
+.works {
+	&__experience {
+		padding: 10px;
+		--webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+		box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+	}
+}
