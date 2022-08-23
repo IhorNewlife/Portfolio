@@ -2,13 +2,19 @@
 	padding-top: 70px;
 	padding-bottom: 70px;
 	display: flex;
-	// justify-content: space-between;
+	@media (max-width: $breakpoint480) {
+		justify-content: center;
+		flex-wrap: wrap-reverse;
+	}
 
 	&__info {
 		max-width: 555px;
 		display: flex;
 		flex-direction: column;
 		gap: 40px;
+		@media (max-width: $breakpoint480) {
+			align-items: center;
+		}
 	}
 
 	&__title {
@@ -45,5 +51,8 @@
 
 	&__img {
 		margin-left: 30%;
+		@media (max-width: $breakpoint480) {
+			margin: 0;
+		}
 	}
 }

@@ -73,6 +73,10 @@ h6 {
   padding: 0 20px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Comic Neue", cursive;
   color: #21243d;
@@ -80,6 +84,12 @@ body {
 
 body.locked {
   overflow: hidden;
+}
+
+svg path {
+  stroke: inherit;
+  stroke-width: inherit;
+  fill: inherit;
 }
 
 @-webkit-keyframes fade {
@@ -317,6 +327,7 @@ nav {
 
 .projects__img {
   height: 180px;
+  width: 245px;
 }
 
 .projects__name {
@@ -404,9 +415,18 @@ footer {
           justify-content: center;
 }
 
-.social__link:hover {
+.social__link svg {
+  fill: black;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.social__link svg:hover {
   fill: #ff6464;
-  color: #ff6464;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 @media (max-width: 1449.98px) {
@@ -425,10 +445,38 @@ footer {
   .container {
     max-width: 740px;
   }
+
+  .experience__works {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 479.98px) {
   .container {
     max-width: none;
+  }
+
+  .hero {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+  }
+
+  .hero__info {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .hero__img {
+    margin: 0;
+  }
+
+  .projects__listItem {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }

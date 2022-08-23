@@ -23,6 +23,9 @@
 }
 
 // Body Locked
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: "Comic Neue", cursive;
     color: #21243d;
@@ -31,7 +34,11 @@ body {
         overflow: hidden;
     }
 }
-
+svg path {
+    stroke: inherit;
+    stroke-width: inherit;
+    fill: inherit;
+}
 // Animations
 // Fade
 @keyframes fade {

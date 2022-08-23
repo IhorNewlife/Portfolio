@@ -25,10 +25,12 @@ footer {
     }
 }
 .social {
-    &__link {
+    &__link svg {
+        fill: black;
+        transition: all 0.5s;
         &:hover {
             fill: $accentColor;
-            color: $accentColor;
+            transition: all 0.5s;
         }
     }
 }

@@ -19,6 +19,9 @@
 		display: flex;
 		gap: 30px;
 		margin-bottom: 20px;
+		@media (max-width: $breakpoint768) {
+			flex-wrap: wrap;
+		}
 	}
 
 	&__title {
