@@ -1,6 +1,10 @@
 .hero {
 	padding-top: 70px;
 	padding-bottom: 70px;
+	@media (max-width: $breakpoint480) {
+		padding-top: 35px;
+		padding-bottom: 35px;
+	}
 	display: flex;
 	@media (max-width: $breakpoint480) {
 		justify-content: center;
@@ -43,9 +47,16 @@
 		background: $accentColor;
 		border-radius: 2px;
 		transition: all 0.5s;
+
+		-webkit-box-shadow: 1px 5px 15px 5px rgba(255, 161, 102, 1);
+		-moz-box-shadow: 1px 5px 15px 5px rgba(255, 161, 102, 1);
+		box-shadow: 1px 5px 15px 5px rgba(255, 161, 102, 1);
 		&:hover {
 			background: $accentColorHover;
 			transition: all 0.5s;
+			-webkit-box-shadow: 1px 5px 15px 5px rgba(255, 161, 102, 1);
+			-moz-box-shadow: 1px 5px 15px 5px rgba(255, 161, 102, 1);
+			box-shadow: 1px 5px 15px 5px rgba(255, 161, 102, 1);
 		}
 	}
 

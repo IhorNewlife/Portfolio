@@ -20,6 +20,12 @@
 		display: flex;
 		align-items: center;
 		gap: 18px;
+		width: 100%;
+		padding: 15px;
+		border-bottom: solid $accentColor;
+		-webkit-box-shadow: 4px 2px 11px 4px rgba(255, 100, 100, 1);
+		-moz-box-shadow: 4px 2px 11px 4px rgba(255, 100, 100, 1);
+		box-shadow: 4px 2px 11px 4px rgba(255, 100, 100, 1);
 		@media (max-width: $breakpoint480) {
 			flex-wrap: wrap;
 		}
@@ -65,6 +71,10 @@
 		color: #fff;
 		margin: auto;
 		transition: all 0.5s;
+
+		-webkit-box-shadow: 4px 2px 11px 4px rgba(255, 100, 100, 1);
+		-moz-box-shadow: 4px 2px 11px 4px rgba(255, 100, 100, 1);
+		box-shadow: 4px 2px 11px 4px rgba(255, 100, 100, 1);
 		&:hover {
 			background: $accentColorHover;
 			transition: all 0.5s;
